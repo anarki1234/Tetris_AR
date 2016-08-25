@@ -14,3 +14,7 @@ Designed and Developed by Tim, original version *Tetris_Remake* is folked from t
 - apply a vuforia key
 - past the key to "App License Key" in ARCamera
 - run   ^_^
+
+## Problems
+1. *** very important, need another better image target, (already get one, but withou printer, can not print it) to make the buttons more sensitive
+2. add audio

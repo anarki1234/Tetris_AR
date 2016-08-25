@@ -1,6 +1,15 @@
-#Tetris_Remake
+#Tetris AR
 
-Altered by Tim, Folked from @tomgsx.
+Designed and Developed by Tim, original version *Tetris_Remake* is folked from tomgsx.
 
-## Changes
+## Game Core Changes
 - add a feature, when cube is higher than the highest row, logging game over, and game pause
+
+## AR Changes
+- platform is vuforia
+- use virtual button to control the game
+
+## How To Use
+- apply a vuforia key
+- past the key to "App License Key" in ARCamera
+- run   ^_^

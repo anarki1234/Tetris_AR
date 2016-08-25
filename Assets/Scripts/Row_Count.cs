@@ -5,8 +5,8 @@ public class Row_Count : MonoBehaviour {
 
 	[HideInInspector]
     public int yPos;
-	[HideInInspector]
-    public Block_Control blockControl;
+    [HideInInspector]
+	public Block_Control blockControl;
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +18,6 @@ public class Row_Count : MonoBehaviour {
         // Once the block has landed, change individual cubes' parent to the row they are on (Y position)
         if (!blockControl.playerControlled)
         {
-			Debug.Log ("Y pos: "+yPos);
             yPos = Mathf.RoundToInt(transform.position.y);
 			Debug.Log ("Y pos adfer rounding: "+yPos);
 

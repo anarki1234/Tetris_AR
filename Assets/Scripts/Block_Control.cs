@@ -31,7 +31,7 @@ public class Block_Control : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         if (playerControlled)
         {
             InitializeObjects();
@@ -63,7 +63,8 @@ public class Block_Control : MonoBehaviour {
         if (isFalling)
         {
             Vector3 pos = transform.position;
-            tempMove = new Vector3(pos.x, pos.y - 1, pos.z);
+			//adjust move speed
+            tempMove = new Vector3(pos.x, pos.y -1f, pos.z);
             // Continuous fast movement on vertical input key hold down
             if (Input.GetAxisRaw("Vertical") < 0)
             {                
@@ -103,9 +104,9 @@ public class Block_Control : MonoBehaviour {
     {
         Vector3 pos = transform.position;
         // Instant movement on first horizontal input key press
-        if (Input.anyKeyDown)
+        if (VBInputEvent.instance.whichButton>0)
         {
-            if (Input.GetAxisRaw("Horizontal") > 0)
+            if (VBInputEvent.instance.whichButton==2)
             {
                 tempMove = new Vector3(pos.x + 1, pos.y, pos.z);
                 if (CollisionCheck(Vector3.right))
@@ -113,7 +114,7 @@ public class Block_Control : MonoBehaviour {
                     transform.position = tempMove;
                 }
             }
-            else if (Input.GetAxisRaw("Horizontal") < 0)
+			else if (VBInputEvent.instance.whichButton==1)
             {
                 tempMove = new Vector3(pos.x - 1, pos.y, pos.z);
                 if (CollisionCheck(Vector3.left))
@@ -148,14 +149,61 @@ public class Block_Control : MonoBehaviour {
             }
             moveTick = moveTime;
         }
-        
+
+
+//		if (Input.anyKeyDown)
+//		{
+//			if (Input.GetAxisRaw("Horizontal") > 0)
+//			{
+//				tempMove = new Vector3(pos.x + 1, pos.y, pos.z);
+//				if (CollisionCheck(Vector3.right))
+//				{
+//					transform.position = tempMove;
+//				}
+//			}
+//			else if (Input.GetAxisRaw("Horizontal") < 0)
+//			{
+//				tempMove = new Vector3(pos.x - 1, pos.y, pos.z);
+//				if (CollisionCheck(Vector3.left))
+//				{
+//					transform.position = tempMove;
+//				}
+//			}
+//			moveTick = moveTime;
+//		}
+//		else if (moveTick > 0.0f)
+//		{
+//			moveTick -= Time.deltaTime;
+//		}
+//		else
+//		{
+//			// Continuous movement on horizontal input key hold down
+//			if (Input.GetAxisRaw("Horizontal") > 0)
+//			{
+//				tempMove = new Vector3(pos.x + 1, pos.y, pos.z);
+//				if (CollisionCheck(Vector3.right))
+//				{
+//					transform.position = tempMove;
+//				}
+//			}
+//			else if (Input.GetAxisRaw("Horizontal") < 0)
+//			{
+//				tempMove = new Vector3(pos.x - 1, pos.y, pos.z);
+//				if (CollisionCheck(Vector3.left))
+//				{
+//					transform.position = tempMove;
+//				}
+//			}
+//			moveTick = moveTime;
+//		}
+//        
     }
 
     // Rotate active block on Jump input key if no obstacles are in the the way
     void RotateMovement(){
-        if (Input.anyKeyDown)
+		if (VBInputEvent.instance.whichButton>0)
         {
-            if (Input.GetAxisRaw("Jump") > 0)
+			if (VBInputEvent.instance.whichButton==3)
             {
                 if (gameObject.name != "O_block(Clone)")
                 {

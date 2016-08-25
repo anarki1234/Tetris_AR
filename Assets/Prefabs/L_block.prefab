@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 406946}
   - 114: {fileID: 11438952}
+  - 114: {fileID: 114000013553407054}
   m_Layer: 0
   m_Name: L_block
   m_TagString: Untagged
@@ -444,3 +445,16 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 107214}
   m_IsPrefabParent: 1
+--- !u!114 &114000013553407054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 107214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646d9a5fbfffce74da49c2540d934f3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yPos: 0
+  blockControl: {fileID: 0}

@@ -5,6 +5,7 @@ using System.Collections;
 public class Block_Spawner : MonoBehaviour
 {
 
+	public GameObject startPoint;
     public GameObject[] block;
     public Sprite[] icon;
     private GameObject nextBlock;
@@ -33,14 +34,18 @@ public class Block_Spawner : MonoBehaviour
     {
         if (nextBlock != null)
         {
-            Instantiate(nextBlock, new Vector3(7, 20, 0), Quaternion.identity);
-            NextBlock();
+			GameObject go=
+				Instantiate(nextBlock, startPoint.transform.position, startPoint.transform.localRotation) as GameObject;
+			go.transform.parent = this.transform;
+			NextBlock();
         }
         else
         {
             NextBlock();
-            Instantiate(nextBlock, new Vector3(7, 20, 0), Quaternion.identity);
-        }
+			GameObject go=
+				Instantiate(nextBlock, startPoint.transform.position, startPoint.transform.localRotation) as GameObject;
+			go.transform.parent = this.transform;
+		}
         score.NewBlock();
     }
 }

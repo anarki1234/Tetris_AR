@@ -1,4 +1,22 @@
-#Tetris_Remake
+#Tetris AR
+## About Tetris AR
+### AR Changes
+- platform is vuforia
+- use virtual button to control the game
+
+### How To Use
+- print the [imgae target](https://geekgame.bai.uno/geekgame.jpg) or download it to your pad
+- apply a vuforia key
+- past the key to "App License Key" in ARCamera
+- run   ^_^
+
+### Problems
+1. *** very important, need another better image target, (already get one, but withou printer, can not print it) to make the buttons more sensitive
+2. add audio
+
+
+
+
 
 Project in Unity3D 5.4, based on the Kaielth folk: https://github.com/Kaielth/Tetris_Remake 
 

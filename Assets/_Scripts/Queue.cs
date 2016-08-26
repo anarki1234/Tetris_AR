@@ -5,8 +5,9 @@ using System.Collections.Generic;
 public class Queue : MonoBehaviour {
 
 	//Properties
+	[HideInInspector]
 	public int[] q;
-	public int qLimit;
+	public int qLimit=3;
 	public GameObject[] groups;
 	public List<int> history;
 	public float TimeFrame = 1.0f;
@@ -14,9 +15,14 @@ public class Queue : MonoBehaviour {
 	// initialization
 	void Start () {
 		history = new List<int>();
-		qLimit = 3;
+
 		q = new int[qLimit];
 		fillQ ();
+	}
+
+	// Update is called once per frame
+	void Update () {
+
 	}
 
 	//Fill the Q from any element
@@ -92,8 +98,5 @@ public class Queue : MonoBehaviour {
 		             Quaternion.identity);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }

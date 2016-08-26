@@ -8,13 +8,10 @@ public class GroupAR : Group {
 	private float pressingButtonTime=0f;
 
 
-
-
-
 	// Update is called once per frame
 	void Update () {
 		// Move Right
-		if (VBInputEvent.instance.whichButton==2 ) { //virtual button right input
+		if (VBInputEvent.instance.whichButton==2 ||Input.GetKeyDown(KeyCode.RightArrow)) { //virtual button right input
 
 
 			pressingButtonTime += Time.deltaTime;
@@ -38,7 +35,7 @@ public class GroupAR : Group {
 
 
 		// Move Left
-		if ( VBInputEvent.instance.whichButton==1) { //virtual button left input
+		if ( VBInputEvent.instance.whichButton==1 || Input.GetKeyDown(KeyCode.LeftArrow) ) { //virtual button left input
 			// Modify position
 
 			pressingButtonTime += Time.deltaTime;
@@ -59,7 +56,7 @@ public class GroupAR : Group {
 		}
 
 		// Rotate
-		if (VBInputEvent.instance.whichButton==3) { //virtualbutton rotation input
+		if (VBInputEvent.instance.whichButton==3 || Input.GetKeyDown(KeyCode.UpArrow) ){ //virtualbutton rotation input
 			pressingButtonTime += Time.deltaTime;
 			if (pressingButtonTime > movingFreezingTime) {
 				transform.Rotate (0, 0, -90);
@@ -76,7 +73,8 @@ public class GroupAR : Group {
 		}
 
 		//fall
-		if (Time.time - lastFall >= FindObjectOfType<Queue>().TimeFrame) {
+		if (Input.GetKeyDown(KeyCode.DownArrow) ||
+			Time.time - lastFall >= FindObjectOfType<Queue>().TimeFrame) {
 			// Modify position
 			transform.position += new Vector3(0, -1, 0);
 

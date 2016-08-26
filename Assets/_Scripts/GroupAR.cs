@@ -12,7 +12,7 @@ public class GroupAR : Group {
 	protected void Update () {
 		// Move Right
 		if (VBInputEvent.instance.whichButton==2 
-			//||Input.GetKeyDown(KeyCode.RightArrow)
+			||Input.GetKeyDown(KeyCode.RightArrow)
 		) { //virtual button right input
 
 
@@ -38,7 +38,7 @@ public class GroupAR : Group {
 
 		// Move Left
 		if ( VBInputEvent.instance.whichButton==1 
-			//|| Input.GetKeyDown(KeyCode.LeftArrow) 
+			|| Input.GetKeyDown(KeyCode.LeftArrow) 
 		) { //virtual button left input
 			// Modify position
 
@@ -61,7 +61,7 @@ public class GroupAR : Group {
 
 		// Rotate
 		if (VBInputEvent.instance.whichButton==3 
-			//|| Input.GetKeyDown(KeyCode.UpArrow) 
+			|| Input.GetKeyDown(KeyCode.UpArrow) 
 		){ //virtualbutton rotation input
 			pressingButtonTime += Time.deltaTime;
 			if (pressingButtonTime > movingFreezingTime) {
@@ -80,7 +80,7 @@ public class GroupAR : Group {
 
 		//fall
 		if (Input.GetKeyDown(KeyCode.DownArrow) 
-		//	||Time.time - lastFall >= FindObjectOfType<Queue>().TimeFrame
+			||Time.time - lastFall >= FindObjectOfType<Queue>().TimeFrame
 		) {
 			// Modify position
 			transform.position += new Vector3(0, -1, 0);

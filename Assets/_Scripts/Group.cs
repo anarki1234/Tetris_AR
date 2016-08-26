@@ -7,7 +7,7 @@ public class Group : MonoBehaviour {
 	float lastFall = 0;
 
 	// Use this for initialization
-	void Start () {
+	protected void Start () {
 		// Default position not valid? Then it's game over
 		if (!isValidGridPos()) {
 			FindObjectOfType<Score> ().SetGameOver ();
@@ -16,9 +16,10 @@ public class Group : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	protected void Update () {
 		// Move Left
-		if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+		if (Input.GetKeyDown(KeyCode.LeftArrow) 
+			) { 
 			// Modify position
 			transform.position += new Vector3(-1, 0, 0);
 			
@@ -31,7 +32,8 @@ public class Group : MonoBehaviour {
 				transform.position += new Vector3(1, 0, 0);
 		}
 		// Move Right
-		else if (Input.GetKeyDown(KeyCode.RightArrow)) {
+		else if (Input.GetKeyDown(KeyCode.RightArrow) 
+			) { 
 			// Modify position
 			transform.position += new Vector3(1, 0, 0);
 			
@@ -44,7 +46,8 @@ public class Group : MonoBehaviour {
 				transform.position += new Vector3(-1, 0, 0);
 		}
 		// Rotate
-		else if (Input.GetKeyDown(KeyCode.UpArrow)) {
+		else if (Input.GetKeyDown(KeyCode.UpArrow) 
+			) { 
 			transform.Rotate(0, 0, -90);
 			
 			// See if valid
@@ -83,7 +86,7 @@ public class Group : MonoBehaviour {
 		}
 	}
 
-	bool isValidGridPos() {
+	protected bool isValidGridPos() {
 		foreach (Transform child in transform) {
 			Vector2 v = Grid.roundVector2(child.position);
 			
@@ -99,7 +102,7 @@ public class Group : MonoBehaviour {
 		return true;
 	}
 
-	void updateGrid() {
+	protected void updateGrid() {
 		// Remove old children from grid
 		for (int y = 0; y < Grid.h; ++y)
 			for (int x = 0; x < Grid.w; ++x)

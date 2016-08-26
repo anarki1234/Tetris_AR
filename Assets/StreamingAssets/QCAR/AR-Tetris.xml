@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="scanner_tetris" size="10.000000 14.129793" />
+    <ImageTarget name="geekgame" size="10.000000 17.793594" />
+    <ImageTarget name="scanner" size="512.000000 362.354919" />
     <ImageTarget name="stones_scaled_ar" size="256.000000 366.122894" />
     <ImageTarget name="stones_scaled" size="512.000000 358.000000" />
   </Tracking>

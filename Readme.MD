@@ -17,5 +17,5 @@ And the original one is from tomgsx: https://github.com/tomgsx/Tetris_Remake
  - audios (blip, gameover ...) and an audio mixer
  - adjust UI (title, score, font), like the screenshot below.
  
-![tetris 3d](https://raw.githubusercontent.com/Kaielth/Tetris_Remake/master/tetris-3d.PNG)
+![tetris 3d](https://github.com/tim-hub/Tetris_Remake/blob/kaielth-tetris/tetris-3d.PNG)
  

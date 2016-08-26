@@ -1,39 +1,32 @@
-#Tetris AR
-## About Tetris AR
-### AR Changes
+# Tetris AR
+
+## About Tetris AR 
 - platform is vuforia
-- use virtual button to control the game
+- use virtual button to control the game (more about virtual button, please visit the link below)
+
+## Screenshots & Videos
+- buttons position
+![buttos position](https://github.com/tim-hub/Tetris_AR/blob/tetris-ar/tetris-buttons.PNG)
 
 ### How To Use
 - print the [imgae target](https://geekgame.bai.uno/geekgame.jpg) or download it to your pad
 - apply a vuforia key
 - past the key to "App License Key" in ARCamera
-- run   ^_^
+- run     ^_^
+- use a card or something ike, to *press the buttons* (for now, there are three buttons, left, right, rotation)
+- - left button is at tail of the eagle
+- - right button is at left swing of the eagle
+- - rotation button is at right swing of the eagle (why these 3 positions, please visit [about buttons position](https://github.com/tim-hub/Tetris_AR/wiki/Why-put-three-buttons'-position-near-the-eagle) )
 
-### Problems
-1. *** very important, need another better image target, (already get one, but withou printer, can not print it) to make the buttons more sensitive
-2. add audio
-
-
-
-
-
-Project in Unity3D 5.4, based on the Kaielth folk: https://github.com/Kaielth/Tetris_Remake 
-
-And the original one is from tomgsx: https://github.com/tomgsx/Tetris_Remake
+### Problems For Now
+1. **very important**, need another better image target
+![better tetris target](https://github.com/tim-hub/Tetris_AR/blob/tetris-ar/tetris-better-target.jpg) 
+(for now, I do not have a printer, so the target is not changed)
 
 
-## Features: 
+### References
 
-### From Kaielth
- - Simple tetris concept, all tetrominoes falling to bottom, when a row is full then it dissapear and the above rows falls down.
- - Queue for N elements, implemented for up to 3 next pieces
- - Score based on the amount of rows removed at the same time. Points added calculated as N * N, where N is number of rows removed.
- - Speed of the pieces falling increased after certain amount of pieces generated. Speed increased at piece 50, 100, 150, 200 and 250.
-
-### added by Tim
- - audios (blip, gameover ...) and an audio mixer
- - adjust UI (title, score, font), like the screenshot below.
- 
-![tetris 3d](https://github.com/tim-hub/Tetris_Remake/blob/kaielth-tetris/tetris-3d.PNG)
- 
+- Kaielth folk: https://github.com/Kaielth/Tetris_Remake 
+- The original is from tomgsx: https://github.com/tomgsx/Tetris_Remake
+- Wiki: https://github.com/tim-hub/Tetris_AR/wiki
+- Vuforia Virtual Button: https://library.vuforia.com/search/site/virtual%20button

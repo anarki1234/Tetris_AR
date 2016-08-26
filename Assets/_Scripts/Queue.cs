@@ -93,11 +93,11 @@ public class Queue : MonoBehaviour {
 	//Create and place a new instance of the current piece
 	private void addToQueueList (int i)
 	{
-		GameObject go=
+		//GameObject go=
 		Instantiate (groups[q[i]],
 		             transform.position + new Vector3(0, i * -5f, -1f),
-				Quaternion.identity) as GameObject;
-		go.transform.parent = this.transform;
+				Quaternion.identity) ;
+		//go.transform.parent = this.transform;
 	}
 	
 

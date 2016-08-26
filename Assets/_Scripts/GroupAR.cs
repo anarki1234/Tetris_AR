@@ -7,8 +7,7 @@ public class GroupAR : Group {
 
 	private float pressingButtonTime=0f;
 
-	// Time since last gravity tick
-	private float lastFall = 0;
+
 
 
 

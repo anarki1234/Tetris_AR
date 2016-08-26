@@ -4,7 +4,7 @@ using System.Collections;
 public class Group : MonoBehaviour {
 
 	// Time since last gravity tick
-	float lastFall = 0;
+	protected float lastFall = 0;
 
 	// Use this for initialization
 	protected void Start () {

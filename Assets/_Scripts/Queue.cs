@@ -7,7 +7,7 @@ public class Queue : MonoBehaviour {
 	//Properties
 	[HideInInspector]
 	public int[] q;
-	public int qLimit=3;
+	public int qLimit=2;
 	public GameObject[] groups;
 	public List<int> history;
 	public float TimeFrame = 1.0f;
@@ -19,12 +19,7 @@ public class Queue : MonoBehaviour {
 		q = new int[qLimit];
 		fillQ ();
 	}
-
-	// Update is called once per frame
-	void Update () {
-
-	}
-
+		
 	//Fill the Q from any element
 	private void fillQ (int i = 0)
 	{

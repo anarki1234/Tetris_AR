@@ -2,16 +2,19 @@
 using UnityEngine.UI;
 using System.Collections;
 
+
 public class Score : MonoBehaviour {
 
 	// Properties
 	public int score;
 	public Text scoreText;
+	public AudioSource bgm;
+
 
 	// Use this for initialization
 	void Start () {
 		score = 0;
-		scoreText.text = "Score: 0";
+		scoreText.text = "Score:"+'\n'+" "+"0";
 	}
 	
 	// Update is called once per frame
@@ -27,6 +30,8 @@ public class Score : MonoBehaviour {
 	// 4		-	16
 	public void setScore(int lines)
 	{
+
+		int tmpScore = score;
 		switch (lines)
 		{
 		case 1:
@@ -42,6 +47,19 @@ public class Score : MonoBehaviour {
 			score += 16;
 			break;
 		}
-		scoreText.text = "Score: " + score;
+
+		//if get score then, play sound effect
+		if (score > tmpScore) {
+
+			GetComponents<AudioSource> ()[0].Play ();
+		}
+		scoreText.text = "Score:"+ '\n'+" "+ score;
+	}
+
+	public void SetGameOver(){
+		scoreText.text = "GAME OVER";
+		GetComponents<AudioSource> ()[1].Play ();
+		Time.timeScale = 0f;
+		bgm.Stop ();
 	}
 }

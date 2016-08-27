@@ -8,6 +8,15 @@
 - buttons position
 ![buttos position](https://github.com/tim-hub/Tetris_AR/blob/tetris-ar/tetris-buttons.PNG)
 
+- videos
+** Preview **
+https://www.youtube.com/watch?v=abQeKbBXMQw
+
+** Recording**
+https://www.youtube.com/watch?v=URsSuhdyDi0
+
+
+
 ### How To Use
 - print the [imgae target](https://geekgame.bai.uno/geekgame.jpg) or download it to your pad
 - apply a vuforia key

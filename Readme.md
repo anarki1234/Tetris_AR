@@ -49,3 +49,4 @@ https://www.youtube.com/watch?v=URsSuhdyDi0
 - The original is from tomgsx: https://github.com/tomgsx/Tetris_Remake
 - Wiki: https://github.com/tim-hub/Tetris_AR/wiki
 - Vuforia Virtual Button: https://library.vuforia.com/search/site/virtual%20button
+- [How to Immigrate a Game to AR?](http://www.linkedin.com/today/post/article/how-make-ar-tetris-game-timothy-white?trk=prof-post)

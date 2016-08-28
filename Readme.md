@@ -28,11 +28,11 @@ https://www.youtube.com/watch?v=URsSuhdyDi0
 
 
 ### How To Use
-- print the [imgae target](https://geekgame.bai.uno/geekgame.jpg) or download it to your pad
+- print the [imgae target](https://geekgame.bai.uno/geekgame.jpg) 
 - apply a vuforia key
 - past the key to "App License Key" in ARCamera
 - run     ^_^
-- use a card or something ike, to *press the buttons* (for now, there are three buttons, left, right, rotation)
+- use a card or something like, to *press the buttons* (for now, there are three buttons, left, right, rotation)
 - - left button is at tail of the eagle
 - - right button is at left swing of the eagle
 - - rotation button is at right swing of the eagle (why these 3 positions, please visit [about buttons position](https://github.com/tim-hub/Tetris_AR/wiki/Why-put-three-buttons'-position-near-the-eagle) )

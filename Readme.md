@@ -10,6 +10,13 @@ download apk form [google play](https://play.google.com/store/apps/details?id=un
 - buttons position
 ![buttos position](https://github.com/tim-hub/Tetris_AR/blob/tetris-ar/tetris-buttons.PNG)
 
+
+- Screenshots
+
+![tetris ar 1](https://lh3.googleusercontent.com/s7ADBc8pZT_Vx3M7KWF-tT_cbHPdRIdEM5xS-3xQ9il-lZ_14a5aB5FCef5P4Osgog=h900)
+![tetris ar 2](https://lh3.googleusercontent.com/6pXZsiphNXzuN1zO-8F0mqHPfagHy1GFCShfV2Bd_yPM8ow0rwK278NVnwWGgTbSBVb_=h900)
+![Tetris AR 3]( https://lh3.googleusercontent.com/qiOv7osjmC2U0QeuNYGb6oIapcJ9FyVqbli-6aC8DYXTa6ZQ38KygmCYvZbeddT-jg=h900)
+
 - videos
 
 ** Preview **
